@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elmir Abbasov</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="footer-styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    
+    <div class="three-js-container" id="three-js-container"></div>
+    
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <div class="loading-screen">
+        <div class="loading-progress">
+            <div class="loading-bar"></div>
+        </div>
+        <div class="loading-text">LOADING...</div>
+    </div>
+    
+    <header>
+        <nav>
+            <div class="logo">EA</div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        
+        <div class="mobile-menu">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-text">SCROLL</div>
+            <div class="scroll-icon"></div>
+        </div>
+    </header>
+    
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="ELMIR ABBASOV">ELMIR ABBASOV</h1>
+                <div class="hero-subtitle">
+                    <span class="gradient-text">DATA SCIENTIST</span>
+                    <span class="separator">|</span>
+                    <span class="gradient-text">AI SPECIALIST</span>
+                    <span class="separator">|</span>
+                    <span class="gradient-text">ML Engineering</span>
+                </div>
+                <p class="hero-description">Transforming complex data into innovative solutions through advanced analytics and machine learning.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn-primary">View My Work</a>
+                    <a href="#contact" class="btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            
+            <div class="data-particles">
+                <div class="data-particle" style="--delay: 0s; --size: 30px; --x: 15%; --y: 20%;"></div>
+                <div class="data-particle" style="--delay: 1s; --size: 40px; --x: 80%; --y: 30%;"></div>
+                <div class="data-particle" style="--delay: 2s; --size: 25px; --x: 60%; --y: 70%;"></div>
+                <div class="data-particle" style="--delay: 1.5s; --size: 35px; --x: 30%; --y: 85%;"></div>
+                <div class="data-particle" style="--delay: 0.7s; --size: 20px; --x: 75%; --y: 15%;"></div>
+                <div class="data-particle" style="--delay: 2.2s; --size: 15px; --x: 85%; --y: 65%;"></div>
+                <div class="data-particle" style="--delay: 1.2s; --size: 22px; --x: 45%; --y: 40%;"></div>
+            </div>
+        </section>
+        
+        <section id="about" class="about-section">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image-container">
+                    <div class="about-image-wrapper">
+                        <img src="asserts/mypictureforlinkedin.png" alt="Elmir Abbasov" class="about-image">
+                        <div class="image-glitch-effect"></div>
+                    </div>
+                    <div class="experience-badge">
+                        <span class="experience-number">2+</span>
+                        <span class="experience-text">YEARS<br>EXPERIENCE</span>
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <h3 class="about-heading">Turning Data into Actionable Intelligence</h3>
+                    
+                    <p>As a dedicated data scientist and machine learning engineer,
+                         I combine strong analytical skills with practical ML implementation expertise.
+                          I excel at transforming complex data into actionable insights and building robust 
+                          machine learning solutions that address real-world challenges. My technical proficiency spans
+                         the full data science workflow—from data preprocessing and exploratory analysis to model development, deployment, and monitoring.
+                          I thrive in collaborative environments where I can leverage my communication skills to translate technical concepts to stakeholders
+                           while continuously expanding my knowledge in this rapidly evolving field.</p>
+                    
+                    <p>My background in statistical modeling, deep learning, and data engineering allows me to approach problems holistically, developing end-to-end solutions that deliver real impact.</p>
+                    
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <div class="stat-number">20+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">8+</div>
+                            <div class="stat-label">ML Models Deployed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label">Research Publications</div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn-primary">Let's Connect</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills" class="skills-section">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">My Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3 class="category-title">Machine Learning</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-skill="Supervised Learning">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                                    <path d="M12 6V2"></path>
+                                    <path d="M5.45 6.11l-2.83-2.83"></path>
+                                    <path d="M18.55 6.11l2.83-2.83"></path>
+                                    <circle cx="12" cy="12" r="7"></circle>
+                                    <path d="M12 12v4"></path>
+                                </svg>
+                            </div>
+                            <div class="skill-name">Supervised Learning</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 95%"></div>
+                            </div>
+                            <div class="skill-percentage">95%</div>
+                        </div>
+                        
+                        <div class="skill-card" data-skill="Unsupervised Learning">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                                    <circle cx="7" cy="7" r="5"></circle>
+                                    <circle cx="17" cy="7" r="5"></circle>
+                                    <circle cx="7" cy="17" r="5"></circle>
+                                    <circle cx="17" cy="17" r="5"></circle>
+                                </svg>
+                            </div>
+                            <div class="skill-name">Unsupervised Learning</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 75%"></div>
+                            </div>
+                            <div class="skill-percentage">75%</div>
+                        </div>
+                        
+                        <div class="skill-card" data-skill="Deep Learning">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                                    <path d="M3 3h7v7H3z"></path>
+                                    <path d="M14 3h7v7h-7z"></path>
+                                    <path d="M14 14h7v7h-7z"></path>
+                                    <path d="M3 14h7v7H3z"></path>
+                                </svg>
+                            </div>
+                            <div class="skill-name">Deep Learning</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 90%"></div>
+                            </div>
+                            <div class="skill-percentage">90%</div>
+                        </div>
+                        
+                        <div class="skill-card" data-skill="NLP">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                            </div>
+                            <div class="skill-name">NLP</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 80%"></div>
+                            </div>
+                            <div class="skill-percentage">80%</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3 class="category-title">Programming & Tools</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-skill="Python">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                                </svg>
+                            </div>
+                            <div class="skill-name">Python</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 95%"></div>
+                            </div>
+                            <div class="skill-percentage">95%</div>
+                        </div>
+                        
+                        <div class="skill-card" data-skill="SQL">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                                    <path d="M8 3H5a2 2 0 0 0-2 2v14c0 1.1.9 2 2 2h3"></path>
+                                    <path d="M16 3h3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-3"></path>
+                                    <path d="M12 8v8"></path>
+                                    <path d="M8 12h8"></path>
+                                </svg>
+                            </div>
+                            <div class="skill-name">SQL</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 90%"></div>
+                            </div>
+                            <div class="skill-percentage">90%</div>
+                        </div>
+                        
+                        <div class="skill-card" data-skill="Data Visualization">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                                    <path d="M3 3v18h18"></path>
+                                    <path d="M7 17l4-8 4 4 4-10"></path>
+                                </svg>
+                            </div>
+                            <div class="skill-name">Data Visualization:<br> Tableau,Power BI</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 95%"></div>
+                            </div>
+                            <div class="skill-percentage">95%</div>
+                        </div>
+                        
+                        <div class="skill-card" data-skill="Cloud Computing">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                                    <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                                </svg>
+                            </div>
+                            <div class="skill-name">Cloud Computing:<br>Google Cloud Platform (Vertex AI)</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 50%"></div>
+                            </div>
+                            <div class="skill-percentage">50%</div>
+                        </div>
+                        <div class="skill-card" data-skill="Data Processing & Analysis">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                                </svg>
+                            </div>
+                            <div class="skill-name">Data Processing & Analysis:<br>Pandas, NumPy, Matplotlib <br> Seaborn, Plotly, Jupyter Notebooks</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 95%"></div>
+                            </div>
+                            <div class="skill-percentage">95%</div>
+                        </div>
+                        <div class="skill-card" data-skill="Machine Learning Frameworks">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                                </svg>
+                            </div>
+                            <div class="skill-name">Machine Learning Frameworks<br>TensorFlow,PyTorch,Keras<br>Scikit-learn,XGBoost/LightGBM</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 90%"></div>
+                            </div>
+                            <div class="skill-percentage">90%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-3d-container">
+                <div class="skills-sphere" id="skills-sphere"></div>
+                <div class="sphere-overlay"></div>
+            </div>
+        </section>
+        
+        <section id="projects" class="projects-section">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=500&width=800" alt="Anomaly Detection System">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">Machine Learning</span>
+                            <span class="project-tag">Time Series</span>
+                        </div>
+                        <h3 class="project-title">Anomaly Detection System</h3>
+                        <p class="project-description">Developed a real-time anomaly detection system using ensemble models that identifies unusual patterns in network traffic, reducing security incidents by 76%.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                <span>Demo</span>
+                            </a>
+                            <a href="#" class="project-link">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                                <span>Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=500&width=800" alt="Predictive Maintenance">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">Deep Learning</span>
+                            <span class="project-tag">IoT</span>
+                        </div>
+                        <h3 class="project-title">Predictive Maintenance System</h3>
+                        <p class="project-description">Built an end-to-end predictive maintenance platform using LSTM networks that forecasts equipment failures up to 2 weeks in advance, reducing downtime by 47%.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                <span>Demo</span>
+                            </a>
+                            <a href="#" class="project-link">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                                <span>Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=500&width=800" alt="NLP Customer Feedback">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">NLP</span>
+                            <span class="project-tag">Transformers</span>
+                        </div>
+                        <h3 class="project-title">NLP Customer Feedback Analysis</h3>
+                        <p class="project-description">Created an automated system using BERT-based models to analyze customer feedback across multiple channels, extracting actionable insights and increasing customer satisfaction by
+                         23%.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                <span>Demo</span>
+                            </a>
+                            <a href="#" class="project-link">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                                <span>Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=500&width=800" alt="Computer Vision Quality Control">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">Computer Vision</span>
+                            <span class="project-tag">CNNs</span>
+                        </div>
+                        <h3 class="project-title">Vision-Based Quality Control</h3>
+                        <p class="project-description">Implemented a computer vision system using CNNs to automatically detect manufacturing defects in real-time with 99.7% accuracy, improving quality control efficiency by 3x.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                <span>Demo</span>
+                            </a>
+                            <a href="#" class="project-link">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                                <span>Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="more-projects">
+                <a href="#" class="btn-primary">View All Projects</a>
+            </div>
+        </section>
+        
+        <section id="contact" class="contact-section">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" class="form-input" required>
+                            <label for="name" class="form-label">Your Name</label>
+                            <div class="input-line"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" class="form-input" required>
+                            <label for="email" class="form-label">Your Email</label>
+                            <div class="input-line"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" class="form-input" required>
+                            <label for="subject" class="form-label">Subject</label>
+                            <div class="input-line"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" class="form-textarea" required></textarea>
+                            <label for="message" class="form-label">Your Message</label>
+                            <div class="input-line"></div>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <h4 class="info-title">Phone Number</h4>
+                            <p class="info-text">+994 (50) 490-57-79</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <h4 class="info-title">Email Address</h4>
+                            <p class="info-text"><a href="mailto:elmirabbasov002@gmail.com">elmirabbasov002@gmail.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <h4 class="info-title">Location</h4>
+                            <p class="info-text">Azerbaijan, Baku</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <h4 class="info-title">Social Profiles</h4>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/elmir-abbasov-1b5612206" class="social-link">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                        <rect x="2" y="9" width="4" height="12"></rect>
+                                        <circle cx="4" cy="4" r="2"></circle>
+                                    </svg>
+                                </a>
+                                <a href="https://github.com/Elmir22" class="social-link">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://www.instagram.com/elmirabbassov?igsh=cWk4bWo5ZzVmaWZ4&utm_source=qr" class="social-link">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                        <circle cx="12" cy="12" r="4"></circle>
+                                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.5"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo">Elmir Abbasov</div>
+                <p class="footer-tagline">Data Scientist & AI Specialist & ML Engineering</p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-links-column">
+                    <h4 class="footer-links-title">Navigation</h4>
+                    <a href="#home" class="footer-link">Home</a>
+                    <a href="#about" class="footer-link">About</a>
+                    <a href="#skills" class="footer-link">Skills</a>
+                    <a href="#projects" class="footer-link">Projects</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                </div>
+                
+                <div class="footer-links-column">
+                    <h4 class="footer-links-title">Resources</h4>
+                    <a href="#" class="footer-link">Blog</a>
+                    <a href="#" class="footer-link">Research Papers</a>
+                    <a href="#" class="footer-link">Datasets</a>
+                    <a href="#" class="footer-link">Tutorials</a>
+                </div>
+            </div>
+            
+            <div class="footer-newsletter">
+                <h4 class="footer-newsletter-title">Subscribe to Newsletter</h4>
+                <p class="footer-newsletter-text">Get the latest updates on AI and data science</p>
+                <form class="footer-newsletter-form">
+                    <input type="email" placeholder="Your email address" class="footer-newsletter-input">
+                    <button type="submit" class="footer-newsletter-button">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p class="footer-copyright">&copy; 2025 Elmir Abbasov. All rights reserved.</p>
+            <p class="footer-credits">Designed with <span class="heart">elmirabbasov</span></p>
+        </div>
+    </footer>
+    
+    <script>
+        // Loading Screen
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.body.classList.add('loaded');
+            }, 2000);
+        });
+        
+        // Custom Cursor
+        const cursor = document.querySelector('.cursor');
+        const cursorFollower = document.querySelector('.cursor-follower');
+        
+        document.addEventListener('mousemove', function(e) {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+            
+            setTimeout(function() {
+                cursorFollower.style.left = e.clientX + 'px';
+                cursorFollower.style.top = e.clientY + 'px';
+            }, 100);
+        });
+        
+        document.addEventListener('mousedown', function() {
+            cursor.style.transform = 'translate(-50%, -50%) scale(0.5)';
+            cursorFollower.style.transform = 'translate(-50%, -50%) scale(0.7)';
+        });
+        
+        document.addEventListener('mouseup', function() {
+            cursor.style.transform = 'translate(-50%, -50%) scale(0.2)';
+            cursorFollower.style.transform = 'translate(-50%, -50%) scale(1)';
+        });
+        
+        // Hover effects for links and buttons
+        const links = document.querySelectorAll('a, button, .project-card, .skill-card');
+        
+        links.forEach(link => {
+            link.addEventListener('mouseenter', function() {
+                cursor.style.transform = 'translate(-50%, -50%) scale(0.5)';
+                cursorFollower.style.transform = 'translate(-50%, -50%) scale(1.5)';
+                cursorFollower.style.opacity = '0.5';
+            });
+            
+            link.addEventListener('mouseleave', function() {
+                cursor.style.transform = 'translate(-50%, -50%) scale(0.2)';
+                cursorFollower.style.transform = 'translate(-50%, -50%) scale(1)';
+                cursorFollower.style.opacity = '1';
+            });
+        });
+        
+        // Sticky Header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+        
+        // Active Navigation Link
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        window.addEventListener('scroll', function() {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // Mobile Menu Toggle
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuToggle.addEventListener('click', function() {
+            mobileMenuToggle.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+        
+        // Three.js Background
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        
+        const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.getElementById('three-js-container').appendChild(renderer.domElement);
+        
+        // Create particles
+        const particlesGeometry = new THREE.BufferGeometry();
+        const particlesCount = 2000;
+        
+        const posArray = new Float32Array(particlesCount * 3);
+        
+        for (let i = 0; i < particlesCount * 3; i++) {
+            posArray[i] = (Math.random() - 0.5) * 10;
+        }
+        
+        particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+        
+        const particlesMaterial = new THREE.PointsMaterial({
+            size: 0.02,
+            color: 0x6e57e0,
+            transparent: true,
+            opacity: 0.8,
+            blending: THREE.AdditiveBlending
+        });
+        
+        const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
+        scene.add(particlesMesh);
+        
+        camera.position.z = 3;
+        
+        // Animation
+        function animate() {
+            requestAnimationFrame(animate);
+            
+            particlesMesh.rotation.x += 0.0005;
+            particlesMesh.rotation.y += 0.0005;
+            
+            renderer.render(scene, camera);
+        }
+        
+        animate();
+        
+        // Resize handler
+        window.addEventListener('resize', function() {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+        
+        // Skills Sphere
+        const skillTags = [
+            'Python', 'TensorFlow', 'PyTorch', 'Scikit-learn', 'Pandas', 
+            'NumPy', 'SQL', 'Deep Learning', 'NLP', 'Computer Vision', 
+            'Time Series', 'Reinforcement Learning', 'Data Visualization', 
+            'Statistical Modeling', 'A/B Testing', 'Big Data', 'Spark', 
+            'AWS', 'Azure', 'Docker', 'Kubernetes', 'MLOps', 'Git', 
+            'CI/CD', 'Feature Engineering', 'Data Cleaning'
+        ];
+        
+        // Create tag cloud when TagCloud library is available
+        if (typeof TagCloud !== 'undefined') {
+            TagCloud('#skills-sphere', skillTags, {
+                radius: 230,
+                maxSpeed: 'normal',
+                initSpeed: 'normal',
+                direction: 135,
+                keep: true,
+                useContainerInlineStyles: true
+            });
+        }
+        
+        // Form Submission
+        const contactForm = document.querySelector('.contact-form');
+        
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form values
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const subject = document.getElementById('subject').value;
+                const message = document.getElementById('message').value;
+                
+                // Here you would typically send the form data to a server
+                console.log('Form submitted:', { name, email, subject, message });
+                
+                // Reset form
+                contactForm.reset();
+                
+                // Show success message (you could add a proper notification system)
+                alert('Thank you for your message! I will get back to you soon.');
+            });
+        }
+    </script>
+</body>
+</html>
+
